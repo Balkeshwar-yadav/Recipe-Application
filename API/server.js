@@ -21,7 +21,7 @@ app.use('/api',userRouter)
 //recipeRouter
 app.use('/api',recipeRouter)
 
-mongoose.connect("mongodb+srv://root:4089@cluster1.leuoiaz.mongodb.net/?appName=Cluster1",
+mongoose.connect("mongodb+srv://ApiCollection:xyz@cluster1.leuoiaz.mongodb.net/?appName=Cluster1",
     {
         dbName:"Mern_Food_Recipe",
     }
@@ -29,4 +29,5 @@ mongoose.connect("mongodb+srv://root:4089@cluster1.leuoiaz.mongodb.net/?appName=
 
 
 const port = 3000;
+
 app.listen(port,()=>console.log(`Server is running on port ${port}`));
